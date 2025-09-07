@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="183.11" tests="8" skipped="0" failures="0" errors="0" timestamp="2025-09-07T14:27:15.466616300Z">
+<testcase classname="Website Automation with user1" name="shopping with the user1 id" time="34.707">
+<system-out><![CDATA[
+Given open the browser......................................................passed
+When go to the login page...................................................passed
+And login to the website with user1 credentials.............................passed
+And search the product......................................................passed
+And High to Low filters.....................................................passed
+And Low to High filters.....................................................passed
+And select the brands from the vendors filter...............................passed
+And select a product from the particular brand..............................passed
+And apply the low to high filter............................................passed
+And apply the high to low filter............................................passed
+And logout from the page....................................................passed
+Then the user is successfully selected product and applied filter...........passed
+]]></system-out>
+</testcase>
+<testcase classname="select products from the different brands and add multiple products to cart" name="adding multiple products to cart from different brands" time="35.845">
+<system-out><![CDATA[
+Given open the website......................................................passed
+When redirect to the authenticate page......................................passed
+And enter the user details..................................................passed
+And user had successfully entered to the page...............................passed
+And search the different products...........................................passed
+And sort the products from the increasing order.............................passed
+And add items to the cart from each brands..................................passed
+And different items should added successfully to cart.......................passed
+And Increase the product quantity in the cart...............................passed
+Then Added different items from the different brands to the cart successfully.passed
+]]></system-out>
+</testcase>
+<testcase classname="Explore all the other Modules" name="Subscribe to the news letter and check other sections" time="19.198">
+<system-out><![CDATA[
+Given open the bstackdemo...................................................passed
+When redirect to sigin page.................................................passed
+And enter the login details.................................................passed
+And go to the newletter section.............................................passed
+And enter the email address and subscribe it................................passed
+And user should successfully subscribed to the newsletter...................passed
+And go to the privacy policy section........................................passed
+And read the privacy policy.................................................passed
+And go to the offers section................................................passed
+And check any offers are avilable...........................................passed
+And if any offers are available add the products to the cart................passed
+And if there are no offers are available, go to the main page...............passed
+Then Explored all the Modules...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Order products using Shop By vendor" name="Shop from vendors - #1.1" time="25.283">
+<system-out><![CDATA[
+Given Website should be opened..............................................passed
+When go to sigin page.......................................................passed
+And login with the details..................................................passed
+And Select a vendor from vendors list.......................................passed
+And select the product and Add the product to the Wishlist..................passed
+And product should be added to the wishlist.................................passed
+And select a product from the Wishlist......................................passed
+And add the product to the cart.............................................passed
+And product should added to cart............................................passed
+And shop the product from the cart..........................................passed
+And enters shipping details with first name "Anush", last name "Kumar", address "123, Hanamkonda, Warangal, Telangana", state "Telangana", and pincode 506001.passed
+And place the order after submitting the details............................passed
+Then Successfuly ordered aproduct from vendors and added it to wishlist and then ordered from the wishlist.passed
+]]></system-out>
+</testcase>
+<testcase classname="check the Image_not_Loading User functionalities" name="Validate user2 product image not displayed and login" time="14.906">
+<system-out><![CDATA[
+Given open the Browser......................................................passed
+When redirect to sigin......................................................passed
+And login with the user2....................................................passed
+And user had looged in......................................................passed
+And check the products......................................................passed
+And image should not be displayed for the products..........................passed
+And then click on logout....................................................passed
+And logout successfully.....................................................passed
+Then validated the user2 functionalities....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="check the existing_orders_user functionalities" name="Validate user3 prevoius orders and login" time="13.531">
+<system-out><![CDATA[
+Given go to website and it should be opened in Browser......................passed
+When navigate to sigin......................................................passed
+And login with the user3....................................................passed
+And user should had logged in...............................................passed
+And go to the orders page...................................................passed
+And check the previous orders products......................................passed
+And click on signout........................................................passed
+And signed out successfully.................................................passed
+Then validated the user3 functionalities....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="check the fav_user functionalities" name="Validate user4 prevoius orders and login" time="30.482">
+<system-out><![CDATA[
+Given go to website.........................................................passed
+When redirect to login......................................................passed
+And signin with the user3...................................................passed
+And user should had logged in with user3 credentials........................passed
+And go to the favourites page...............................................passed
+And view the products.......................................................passed
+And remove products from favourites.........................................passed
+And click on logout option..................................................passed
+And logged out from the bstackdemo..........................................passed
+Then validated the user4 functionalities....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="check the locked_user functionalities" name="Validate user5 login functionality" time="8.394">
+<system-out><![CDATA[
+Given redirect to webpage...................................................passed
+When navigate to login page.................................................passed
+And enter the user5 signin credentials......................................passed
+And user not able to login to website.......................................passed
+Then validated the user5 login..............................................passed
+]]></system-out>
+</testcase>
+</testsuite>
