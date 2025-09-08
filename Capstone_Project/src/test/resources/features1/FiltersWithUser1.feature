@@ -19,12 +19,6 @@
     And apply the high to low filter
        
 
-  #  And The user opens the Privacy Policy via "Read More"
-   # And The Privacy Policy page should be displayed
-
-   # And The user navigates to the Offers page
-    #And The Offers message should be verified
-
 	And logout from the page
     Then the user is successfully selected product and applied filter
 
