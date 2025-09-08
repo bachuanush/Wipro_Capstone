@@ -49,6 +49,8 @@ public class Page {
     By AddToCart = By.xpath("//*[@id=\"1\"]/div[4]");
     By deleteFromCart = By.cssSelector("div[class=\"shelf-item__del\"]");
     By checkout = By.xpath("//div[@class='buy-btn']");
+
+	 By selectProduct = By.xpath("//*[@id=\"23\"]/div[1]/button");
     
     By FirstName = By.id("firstNameInput");
     By LastName = By.id("lastNameInput");
@@ -311,6 +313,10 @@ public class Page {
     	JavascriptExecutor js8 = (JavascriptExecutor) driver;
     	js8.executeScript("window.scrollBy(0, 400);");
     	driver.findElement(By.className("shelf-item__buy-btn")).click();
+    }
+
+	public void select_product() {
+    	driver.findElement(selectProduct).click();
     }
 }
 
