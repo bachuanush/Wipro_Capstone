@@ -59,8 +59,7 @@ public class FiltersWithUser1 {
 
 	@And("select a product from the particular brand")
 	public void select_a_product_from_the_particular_brand() throws InterruptedException {
-		//driver.findElement(By.xpath("//*[@id=\"23\"]/div[1]/button")).click();
-		pg.ShopByVendor();
+		pg.select_product();
 	}
 
 	@And("apply the low to high filter")
@@ -85,3 +84,4 @@ public class FiltersWithUser1 {
 	}
 
 }
+
